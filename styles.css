@@ -1,0 +1,106 @@
+.shadow-drop-2-center{animation:shadow-drop-2-center .4s cubic-bezier(.25,.46,.45,.94) both}
+
+.esconder {
+  display: none;
+}
+
+#Pfp {
+  height: 120px;
+  width: 120px;
+  border-radius: 50%;
+}
+
+#paiCardInsta {
+  height: 508px;
+  width: 330px;
+  border: 1px black solid;
+  padding: 20px;
+}
+
+#userIcon {
+  font-size: 30px;
+}
+
+.SobrePost {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+}
+
+#pontoSobre {
+  font-size: 5px;
+}
+
+#maisOpcoes {
+  margin-left: 90px;
+  font-weight: bold;
+  font-size: 25px;
+}
+
+.imgPost img {
+  height: 320px;
+  border-radius: 6px;
+}
+
+.imgPost {
+  padding: 20px 5px 5px 5px;
+}
+
+.icons i {
+  font-size: large;
+  margin-bottom: 10px;
+}
+
+.icons {
+  font-size: large;
+}
+
+#iconSalvar {
+  margin-left: 210px;
+}
+
+.descricaoPostInsta {
+  font-weight: 500;
+}
+
+#widgetCobrancaWhatsapp {
+  margin: 10px;
+}
+
+.load {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgb(255, 255, 255);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.login {
+  height: 370px;
+  width: 300px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items:center;
+  border: 1px solid black;
+  border-radius: 12px;
+}
+
+.login input {
+  height: 30px;
+  width: 200px;
+  border-radius: 6px;
+  border: 1px solid black;
+  display: flex;
+  flex-direction: column;
+  align-items:center;
+}
+
+.input-login {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}

@@ -36,10 +36,14 @@
 
 let TelaLoad = document.querySelector(".load");
 let BtnLogin = document.getElementById("btnLogin");
+let login = document.querySelector(".login");
 
 BtnLogin.addEventListener("click", function () {
-  TelaLoad.style.display = "none";
-  alert("Login realizado com sucesso!");
+  login.style.animation = "loginAnimation 2s ease 0s 1 normal forwards";
+  setTimeout(() => {
+    TelaLoad.style.display = "none";
+    alert("Login realizado com sucesso!");
+  }, 1000);
 });
 
 //H1 do header

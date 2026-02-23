@@ -1,4 +1,15 @@
-.shadow-drop-2-center{animation:shadow-drop-2-center .4s cubic-bezier(.25,.46,.45,.94) both}
+@keyframes loginAnimation {
+	0% {
+		opacity: 1;
+		transform: scale(1);
+	}
+
+	100% {
+		opacity: 0;
+		transform: scale(0.6);
+	}
+}
+
 
 .esconder {
   display: none;

@@ -34,17 +34,26 @@
 
 // projetoAppMobile.exibirProjeto();
 
-let TelaLoad = document.querySelector(".load");
-let BtnLogin = document.getElementById("btnLogin");
-let login = document.querySelector(".login");
 
-BtnLogin.addEventListener("click", function () {
-  login.style.animation = "loginAnimation 2s ease 0s 1 normal forwards";
-  setTimeout(() => {
-    TelaLoad.style.display = "none";
-    alert("Login realizado com sucesso!");
-  }, 1000);
-});
+
+//Código para o login – only run when login form exists
+const TelaLoad = document.querySelector(".load");
+const BtnLogin = document.getElementById("btnLogin");
+const login = document.querySelector(".login");
+
+if (BtnLogin) {
+  BtnLogin.addEventListener("click", function () {
+    if (login) {
+      login.style.animation = "loginAnimation 2s ease 0s 1 normal forwards"; //Animação do login
+    }
+    //Timeout pra redirecionar para a página principal após o login
+    setTimeout(() => {
+      window.location.href = "index.html"; 
+    }, 1000);
+  });
+}
+
+
 
 //H1 do header
 const h1Header = document.getElementById("titulo-painel");
@@ -70,6 +79,7 @@ let novoItem = document.createElement("li");
 novoItem.textContent = "Configurações";
 ul.appendChild(novoItem);
 
+//Acessando a foto de perfil e adicionando eventos
 const fotoDePerfil = document.querySelector("#Pfp");
 
 fotoDePerfil.addEventListener("click", function () {
